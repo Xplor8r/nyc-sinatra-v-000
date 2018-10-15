@@ -1,6 +1,6 @@
 <h1>All Historical Figures</h1>
-<%@figures.each do |figure| %>
- <p><a href="/figures/<%= figure.id %>"><%=figure.name%></p>
+<%@landmarks.each do |landmark| %>
+ <p><a href="/landmarks/<%= landmark.id %>"><%=landmark.name%></p>
 
 <%end%>
 <a class="button" href="/landmarks">Landmarks</a>
