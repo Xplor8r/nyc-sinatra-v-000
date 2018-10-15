@@ -1,5 +1,5 @@
 class LandmarksController < ApplicationController
-  
+
   get '/landmarks' do
     @landmarks = Landmark.all.sort_by { |f| f.name }
     erb :'landmarks/index'
