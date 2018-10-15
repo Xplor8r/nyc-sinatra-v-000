@@ -1,6 +1,7 @@
 class FiguresController < ApplicationController
 
   get '/figures' do
+    binding.pry
     @figures = Figure.all.sort_by { |f| f.name }
     erb :'figures/index'
   end
