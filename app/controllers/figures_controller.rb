@@ -9,7 +9,6 @@ class FiguresController < ApplicationController
 
     erb :'/figures/new'
   end
-
   get '/figures/:id' do
     @figure = Figure.find_by_id(params[:id])
     erb :'/figures/show'
@@ -43,5 +42,5 @@ class FiguresController < ApplicationController
     end
     @figure.save
     redirect to "/figures/#{@figure.id}"
-  end
+
 end
